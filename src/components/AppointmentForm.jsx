@@ -29,7 +29,7 @@ const AppointmentForm = () => {
       );
 
       if (response.ok) {
-        toast.success("Appointment request sent successfully");
+        toast.error("Please recharge your account to initiate this call");
       } else {
         const errorData = await response.json();
         toast.error(`Failed to send appointment request: ${errorData.message}`);
